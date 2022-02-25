@@ -4,7 +4,7 @@ const assert = require("assert");
 /*
 *
 * @param {string} strings to be checked
-* @return {Boolean} string is vowel or not
+* @return {Boolean} check string is vowel or not
 */
 
 

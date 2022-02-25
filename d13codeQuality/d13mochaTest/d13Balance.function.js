@@ -9,8 +9,10 @@ module.exports = {compoundInterest};
 
 /*
 *
-* @param {string} strings to be checked
-* @return {Boolean} string is vowel or not
+* @param {number} initial, the start balance
+* @param {number} rate,  a given value
+* @param {number} years,  a given value
+* @return {number} balance, a value to be return
 */
 
 function compoundInterest(initial, rate, years){
