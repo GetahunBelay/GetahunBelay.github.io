@@ -6,8 +6,8 @@ module.exports = {computeSalesComission};
 
 /*
 *
-* @param {string} strings to be checked
-* @return {Boolean} string is vowel or not
+* @param {number} sales amount
+* @return {Boolean} is salaried
 */
 
 function computeSalesComission(isSalaried, salesAmount){

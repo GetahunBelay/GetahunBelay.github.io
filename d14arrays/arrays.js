@@ -100,6 +100,12 @@ function maxOfThree(n1, n2, n3){
   }
   console.log(reverseArray(["A", "B", "C"]))
   
+/**
+ * 
+ * @param {object} array of numbers
+ * @returns {object} reverse of an array
+ */
+
   function reverseArrayInPlace(arrayValue){
     let reversed = [];
     for( let j = arrayValue.length - 1; j >= 0; j--){
@@ -135,30 +141,22 @@ function maxOfThree(n1, n2, n3){
 
   /**
  * 
- * @param {number} a is a number
- * @param {number} b is a number 
- * @param {number} c is a number
- * @returns {number} largest of a, b, c
+ * @param {Number} row number of rows in the array
+ * @param {Number} colomun  number of colomuns in the array
+ * @returns {Array} 2 -dimensional array of sequential numbers
  */
-   
-    
-    
-    function generateArray(n1, n2){
-        let arr1 = []
-        let arr2 = []
-        let arr3 = []
-        let arr4 = []
-          for(let j=1; j<=n2; j++){
-            arr1.push(j)
-          }
-          for(let m=n2+1; m<=n2 + 3; m++){
-            arr2.push(m)
-          }for( let i = n2 +4; i<=n1*n2; i++){
-            arr3.push(i)
-          }
-        
-        arr4.push(arr1, arr2, arr3)
-        return arr4
+function generateArray(row,colomun){
+  let multiArray = [];
+  let value = 1 ;
+
+  for(let i=0;i<row;i++){
+      let arr =[];
+      for(let j =0;j<colomun;j++){
+         arr.push(value);
+         value++;
       }
-      console.log(generateArray(2,3))
-      
+      multiArray.push(arr);
+  }
+  
+  return multiArray;
+}
