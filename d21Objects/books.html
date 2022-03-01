@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Book List</title>
+    
+</head>
+
+<body>
+    <p>
+        Book Title
+        <br />
+        <input type="text" id="title" size="80" />
+    </p>
+    <p>
+        Author
+        <br />
+        <input type="text" id="author" size="80" />
+    </p>
+    <p>
+        library ID
+        <br />
+        <input type="text" id="libraryID" size="80" />
+    </p>
+
+
+    <input type="button" value="Add book to library" id="addBtn" onclick="addBook()"/>
+    <input type="button" value="Show titles" id="titlesBtn" onclick="showTitles()"/>
+    <input type="button" value="scramble" id="scrambleBtn" onclick="findAuthors()"/>
+
+    <p>
+        <textarea id="displayArea" rows="10" cols="80"></textarea>
+    </p>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
