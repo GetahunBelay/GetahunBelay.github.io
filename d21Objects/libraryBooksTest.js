@@ -1,11 +1,14 @@
 "use strict";
+
+
 /*  comment out the exports when running in the browser */
-const assert = require("assert");  //always need this with node
-const myExports = require("./app.js");  //with node need the name of your file with your functions here
-const findTitles = myExports.findTitles;  //do this for all of the functions used in the Mocha tests
-const findAuthors = myExports.findAuthors;
-const findIds = myExports.findIds;
-const addBook = myExports.addBook;
+// const assert = require("assert");  //always need this with node
+// const myExports = require("./app.js");  //with node need the name of your file with your functions here
+// const findTitles = myExports.findTitles;  //do this for all of the functions used in the Mocha tests
+// const addBook = myExports.addBook;
+// const findAuthors = myExports.findAuthors;
+// const findIDs = myExports.findIDs;
+
 
 /* global assert findTitles findAuthors findIDs addBook */
 /*
@@ -32,22 +35,26 @@ describe("library", function () {
 
 
     it("find titles", function () {
-        assert.deepEqual(findTitles(), "The Road Ahead");
+        assert.deepEqual(findTitles(), titles);
     });
 
     it("find authors", function () {
-        assert.deepEqual(findAuthors(), "Bill Gates");
+        assert.deepEqual(findAuthors(), authors);
     });
 
     it("find ids", function () {
-        assert.deepEqual(findIDs(), 1254);
-    });
-
-    it("add book", function () {
-        const newBook = {title: "My New Book", author: "Me Too", libraryID: 1144};
-        ids.push(1144);
-        assert.deepEqual(addBook(), newBook);
         assert.deepEqual(findIDs(), ids);
     });
 
+    it("add book", function () {
+         const newBook = {title: "My New Book", author: "Me Too", libraryID: 1144};
+          ids.push(1144);
+            ids.sort();
+         assert.deepEqual(addBook("My New Book","Me Too", 1144), newBook);
+         assert.deepEqual(findIDs(), ids);
+
+     
+    });
+    
+    
 });
