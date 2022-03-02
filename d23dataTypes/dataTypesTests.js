@@ -1,12 +1,14 @@
 "use strict";
 /* global assert  ucFirst checkSpam truncate extractCurrencyValue camelize  */
 /* comment out the node specific code when going to the browser*/
-const assert = require("assert");  //always need this with node
+/*const assert = require("assert");  //always need this with node
 const myExports = require("./app.js");  //with node need the name of your file with your functions here
 const getMaxSubSum = myExports.getMaxSubSum;  //do this for all of the functions used in the Mocha tests
 const ucFirst = myExports.ucFirst; 
 const truncate = myExports.truncate; 
 const camelize = myExports.camelize; 
+const checkSpam = myExports.checkSpam; */
+
 
  
 /* eslint-disable quotes */
@@ -57,14 +59,14 @@ describe("truncate", function() {
 
 
 
-describe("extractCurrencyValue", function() {
+// describe("extractCurrencyValue", function() {
 
-  it("for the string $120 returns the number 120", function() {
-    assert.strictEqual(extractCurrencyValue('$120'), 120);
-  });
+//   it("for the string $120 returns the number 120", function() {
+//     assert.strictEqual(extractCurrencyValue('$120'), 120);
+//   });
 
 
-});
+// });
 
 
 
