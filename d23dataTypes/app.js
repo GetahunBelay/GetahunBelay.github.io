@@ -4,7 +4,11 @@
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser */
 //module.exports = { ucFirst, getMaxSubSum, truncate , camelize, checkSpam}; //add all of your function names here that you need for the node mocha tests
 
-
+/**
+ * 
+ * @param {string} strings
+ * @returns {string} strings
+ */
 
 function ucFirst(str) {
    if(str===""){
@@ -19,8 +23,11 @@ function ucFirst(str) {
 }
 console.log(ucFirst("getahun"))
 
-
-
+/**
+ * 
+ * @param {string} strings
+ * @returns {Boolean} true or false
+*/
   function checkSpam(str) {
 
     let lowerStr = str.toLowerCase();
@@ -37,7 +44,12 @@ console.log(ucFirst("getahun"))
  
   }
  
-
+/**
+ * 
+ * @param {string} string
+ * @param {number} number
+ * @returns{string}
+ */
 
 
 
@@ -73,6 +85,12 @@ function getMaxSubSum(arr) {
   }
 
 
+
+/**
+ * 
+ * @param {string} string
+ * @returns {string} string
+ */
 
 
 
