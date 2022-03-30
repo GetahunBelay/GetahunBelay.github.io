@@ -18,13 +18,14 @@ h1{
     background-color: aquamarine;
     text-align: center;
 }
+
+a:link{
+    text-decoration: none;
+}
 a:hover{
     color:purple;
     text-decoration: underline;
   
-}
-a:link{
-    text-decoration: none;
 }
 body>p::first-line{
     color:black
@@ -33,4 +34,3 @@ p::first-letter{
 font-size: 1.5em;
 }
 
-/*<a href="https://validator.w3.org/check/referer">Validate</a>*/
