@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite;
+}
+h2{
+    color:navy;
+}
+p{
+    color:purple
+}
+.imageClass{
+    height:250px;
+    width:250px;
+}
+h2, p{
+    font-family: Verdana;
+}
+h1{
+    background-color: aquamarine;
+    text-align: center;
+}
+a:hover{
+    color:purple;
+    text-decoration: underline;
+  
+}
+a:link{
+    text-decoration: none;
+}
+body>p::first-line{
+    color:black
+}
+p::first-letter{
+font-size: 1.5em;
+}
+
+/*<a href="https://validator.w3.org/check/referer">Validate</a>*/
