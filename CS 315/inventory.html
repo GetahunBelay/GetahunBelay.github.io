@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #div1{
+        color:white;
+        background-color: green;
+        text-align: center;
+        margin-left: 295px;
+        margin-right: 270px;
+        padding-top:7px ;
+        padding-bottom:7px ;
+        
+    }
+    th{
+        color:white;
+        background-color: blue;
+        margin-left: 10px;
+        margin-right: 270px;
+    }
+    
+    table{
+        border:2px;
+        border-color: black;
+        width: 100%;
+        height:10px ;
+        text-align: left;
+        background-color: lightgray;
+        font-size: 10px;
+        font-size: 10px;      
+    }
+    
+</style>
+</head>
+<body>
+    <label><b>Inventory</b></label>
+    <br><br>
+    <label>Item Name:</label>
+    <br>
+    <input id="item" value="">
+    <br><br>
+    <label>Item Category:</label>
+    <br>
+    <input id="category" value="">
+    <br><br>
+    <label>Quantity</label>
+    <br>
+    <input id="quantity" value="">
+    <br><br>
+    <button id="div1" onclick="add()">Add</button>
+    <br><br>
+    <table>
+        <tr id="tr">
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+        </tr>
+        <tr class="first">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        </tr>
+    </table>
+    <script>
+    function add() {
+        let itemName = document.getElementById("item").value;
+        let itemCategory = document.getElementById("category").value;
+        let itemQuantity = document.getElementById("quantity").value;
+
+        let table = document.getElementsByTagName('table')[0];
+
+        let newRow = table.insertRow(table.rows.length);
+
+        let cel1 = newRow.insertCell(0);
+        let cel2 = newRow.insertCell(1);
+        let cel3 = newRow.insertCell(2);
+
+        cel1.innerHTML = itemName;
+        cel2.innerHTML = itemCategory;
+        cel3.innerHTML = itemQuantity;       
+      }
+    
+    </script>
+</body>
+</html>
