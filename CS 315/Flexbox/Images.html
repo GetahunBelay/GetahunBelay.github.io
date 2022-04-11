@@ -84,32 +84,51 @@
     <title>Document</title>
 
     <style>
+        section{
+            margin: 250px;
+            border: 1px solid;
+        }
         .container{
+            flex: 1;
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        .container img{
+            flex-wrap: wrap;
+            width: 250px;
+            height: 150px;
+        }
+        img{
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
 <body>
-    
+    <section class="sect">
         <div class="container">
-           <img class="item" src="funnyFace.jpeg" alt="Funny Face">
-           <img class="item" src="funnyFace.jpeg" alt="Funny Face">
-           <img class="item" src="funnyFace.jpeg" alt="Example image">
-           <img class="item" src="funnyFace.jpeg" alt="Example image">                        
-        </div>
-        <div class="container">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">                        
+            <img class="img" src="funnyFace.jpeg" alt="Funny face"> 
+            <img class="img" src="sadFace.webp" alt="Sad face"> 
+            <img class="img" src="sadFace.webp" alt="sad Face">
+            <img class="img" src="funnyFace.jpeg" alt="Funny Face">
+                                  
          </div>
          <div class="container">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">
-            <img class="item" src="funnyFace.jpeg" alt="Example image">                        
+            <img class="img" src="sadFace.webp" alt="Sad Face">
+            <img class="img" src="funnyFace.jpeg" alt="Funny Face">
+            <img class="img" src="funnyFace.jpeg" alt="funny Face">
+            <img class="img" src="funnyFace.jpeg" alt="Funny Face">                        
          </div>
-      
+         <div class="container">
+            <img class="img" src="sadFace.webp" alt="Sad Face">
+            <img class="img" src="funnyFace.jpeg" alt="Funny Face">
+            <img class="img" src="funnyFace.jpeg" alt="funny Face">
+            <img class="img" src="funnyFace.jpeg" alt="Funny Face">                        
+         </div>
+    </section>
+        
     
 </body>
 </html>
