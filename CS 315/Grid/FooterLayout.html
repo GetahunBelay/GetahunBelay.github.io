@@ -31,12 +31,11 @@
             padding-left: 60px;          
         }
 
-        .roundBox {
+        .bigRound{
             display: flex;
             border: 1px solid gray;
-            background-color: rgba(128, 128, 128, 0.705);
+            background-color: gray;
             border-radius: 50px;
-            /* padding: px; */
             justify-content: space-between;
         }
 
@@ -50,9 +49,12 @@
             color: white;
         }
 
-        .round {
+        .smallRound {
             border-radius: 50px;
-            padding: 5px
+            padding: 15px;
+            background-color: lightgray;
+            color: white;
+
         }
 
         .tweet {
@@ -87,16 +89,16 @@
                 </p>
                 <br>
                 <p>
-                    <img src="" alt="Phone pic">
+                    <img src="" alt="Phone">
                     <input class="img" type="text" placeholder="enter your phone number">
                 </p>
                 <p>
-                    <img class="img" src="" alt="Mail Box pic">
+                    <img class="img" src="" alt="Address">
                     <input class="img" type="text" placeholder="enter your address"><br><br>
                 </p>
                 <br>
-                <div class="roundBox">
-                    <input class="round" type="text" placeholder="Enter your email">
+                <div class="bigRound">
+                    <input class="smallRound" type="text" placeholder="Enter your email">
                     <button class="send">Send</button>
                 </div>
             </div>
@@ -107,9 +109,9 @@
                         <img src="twitter.png" style="width:30px; height:30px">
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
-                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
-                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Natus soluta reiciendis impedit ratione quo quibusdam, 
+                        explicabo eos, odit rem sed amet.
                     </p>
 
                     <p>
@@ -156,17 +158,6 @@
             </div>
             <p style="padding-right: 100px;">Colorlib</p>
         </div>      
-    </div>
-    <div class="Container2">
-        <div class="flex">
-            <p>Home</p>
-            <p>About</p>
-            <p>Our works</p>
-            <p>Services</p>
-            <p>Blog</p>
-            <p>Contacts</p>
-        </div>
-        <p style="padding-right: 100px;">Colorlib</p>
     </div>
     <p>
         <a href="https://validator.w3.org/check/referer">Validate</a>
