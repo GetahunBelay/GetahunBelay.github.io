@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            padding: 1rem;
+            background-color: darkslategrey;
+        }
+
+        .Container1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 80px;
+            padding-bottom: 30px;
+            padding-top: 60px;
+            gap: 2rem;
+        }
+
+        .Container2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex {
+            display: flex;
+            flex: 1;
+            height: 100%;
+            justify-content: space-around;          
+        }
+
+        .roundBox {
+            display: flex;
+            border: 1px solid gray;
+            background-color: rgba(128, 128, 128, 0.705);
+            border-radius: 50px;
+            /* padding: px; */
+            justify-content: space-between;
+        }
+
+        .send {
+            background-color: orange;
+            border-radius: 50px;
+            padding: 5px 20px;
+        }
+
+        button,p,h3{
+            color: white;
+        }
+
+        .round {
+            border-radius: 50px;
+            padding: 5px
+        }
+
+        .tweet {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+        }
+
+        .instagram {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            height: 80%;
+        }
+
+        .imageClass {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Container1">
+            <div class="box box1">
+                <h3>About Us</h3>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus doloribus
+                    perferendis dolore harum accusantium ullam facere maiores blanditiis quibusdam, molestias
+                    dolorem, ad sequi vero dignissimos fugiat ducimus laborum esse!
+                </p>
+                <br>
+                <p>
+                    <img src="" alt="Phone pic">
+                    <input class="img" type="text" placeholder="enter your phone number">
+                </p>
+                <p>
+                    <img class="img" src="" alt="Mail Box pic">
+                    <input class="img" type="text" placeholder="enter your address"><br><br>
+                </p>
+                <br>
+                <div class="roundBox">
+                    <input class="round" type="text" placeholder="Enter your email">
+                    <button class="send">Send</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Latest Tweet</h3>
+                <div class="tweet">
+                    <p>
+                        <img src="twitter.png" style="width:30px; height:30px">
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
+                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
+                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                    </p>
+
+                    <p>
+                        <img src="twitter.png" style="width:30px; height:30px">
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
+                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
+                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                    </p>
+
+                    <p>
+                        <img src="twitter.png" style="width:30px; height:30px">
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
+                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
+                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                    </p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Instagram</h3>
+                <div class="instagram">
+                    <img class="imageClass" src="funnyFace.webp" alt="">
+                    <img class="imageClass" src="sadFace.webp" alt=""> 
+                    <img class="imageClass" src="image2.webp" alt="">
+                    <img class="imageClass" src="image3.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <p>
+            <hr style="margin:1px 80px">
+        </p>       
+    </div>
+    <div class="Container2">
+        <div class="flex">
+            <p>Home</p>
+            <p>About</p>
+            <p>Our works</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>Contacts</p>
+        </div>
+        <p style="padding-right: 100px;">Colorlib</p>
+    </div>
+    <p>
+        <a href="https://validator.w3.org/check/referer">Validate</a>
+    </p>
+</body>
+
+</html>
