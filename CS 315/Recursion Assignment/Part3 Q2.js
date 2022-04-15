@@ -41,5 +41,7 @@ function contains(node, target) {
 }
 
 console.log(contains(abe1, "Homer"));
+console.log(contains(abe1, "Crusty"));
+
 
 }

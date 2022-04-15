@@ -42,19 +42,19 @@ function showValueRecursive(node){
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-    function showValueNameLooping(node){
-        console.log(`${node.name} : ${node.value} `);
-            if(node.children!==null){
-                for(const kid of node.children){
-                   console.log(`${kid.name} : ${kid.value} `);
-                   if(kid.children!==null){
-                       for(const baby of kid.children){
-                         console.log(`${baby.name} : ${baby.value} `);  
-                       }
-                   }
-                }
-            }
+    // function showValueNameLooping(node){
+    //     console.log(`${node.name} : ${node.value} `);
+    //         if(node.children!==null){
+    //             for(const kid of node.children){
+    //                console.log(`${kid.name} : ${kid.value} `);
+    //                if(kid.children!==null){
+    //                    for(const baby of kid.children){
+    //                      console.log(`${baby.name} : ${baby.value} `);  
+    //                    }
+    //                }
+    //             }
+    //         }
           
         
-    }
-    showValueNameLooping(node1);
+    // }
+    // showValueNameLooping(node1);
