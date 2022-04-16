@@ -8,6 +8,19 @@ list.next.next.next.next = { name: "Maggie" };
 
 console.log(list);
 
+function generateList(root){
+  // if(root.descendents==null || root.descendents.length==0){
+  //   return new findListNode(root.value)
+  // }
+  let linkedList = new listNode(root.value)
+  let list = linkedList
+  for(let eachChild of root.descendents){
+    list.next = generateList(eachChild)
+    list = list.next
+  }
+  return linkedList
+}
+console.log(generateList("abe"))
 /* Output
 {
   name: "Abe",
