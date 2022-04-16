@@ -38,6 +38,8 @@ function showValueRecursive(node){
     }
     }
     showValueNameLooping(node1);
+    showValueNameLooping(node2);
+
     
 
 ////////////////////////////////////////////////////////////////////////////////////
