@@ -8,6 +8,10 @@ list.next.next.next.next = { name: "Maggie" };
 
 console.log(list);
 
+function listNode(root, name){
+  this.name = name
+}
+
 function generateList(root){
   // if(root.descendents==null || root.descendents.length==0){
   //   return new findListNode(root.value)

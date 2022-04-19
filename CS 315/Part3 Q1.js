@@ -1,11 +1,11 @@
 "use strict";
 
-class TreeNode {
-    constructor(value) {
+function TreeNode(value) {
+    // constructor(value) {
         this.value = value;
         this.descendents = [];
     }
-}
+// }
 // create nodes with values
 const abe = new TreeNode('Abe');
 const homer = new TreeNode('Homer');
