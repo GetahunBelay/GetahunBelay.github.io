@@ -1,0 +1,32 @@
+
+<!-- Exercise 01
+Create a swap.html page which has 2 pictures and 1 button on it.
+You can use any picture you want.
+The button is named Swap.
+When you click the Swap button, the location of two pictures are swaped. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping Images</title>
+
+    <script>
+        function swap(){
+            let leftImg = document.getElementById("imgLeft")
+            let rightImg = document.getElementById("imgRight")
+            leftSRC = leftImg.src
+            rightSRC = rightImg.src
+            leftImg.src = rightSRC
+            rightImg.src = leftSRC
+        }
+    </script>
+</head>
+<body>
+    <img id="imgLeft" width="250px" height="250px" src="../DOM_Events/images/funnyFace.jpeg">
+    <img id="imgRight" width="250px" height="250px" src="../DOM_Events/images/sadFace.webp">
+    <button onclick="swap()">Swap</button>
+</body>
+</html>

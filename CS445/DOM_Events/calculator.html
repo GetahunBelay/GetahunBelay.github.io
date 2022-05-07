@@ -1,0 +1,36 @@
+<!-- Exercise 02
+Create a simple calculator.html page which has 3 inputs and 1 submit on it.
+The first 2 inputs are only allowed to put numbers.
+If you use type any number in the first 2 inputs, then click submit button. 
+JavaScript will sum the two numbers, display the typed number in the first 2 inputs, 
+the result in the last input. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let firstNum = document.getElementById("num1").value
+            let secondNum = document.getElementById("num2").value
+            let sum = +firstNum + +secondNum
+            
+            document.getElementById("myResult").value = sum
+        }  
+     </script>
+</head>
+<body>
+
+    <input id="num1" placeholder="enter first number">
+    <br><br>
+    <input type="text" id="num2" placeholder="enter second number">
+    <br><br>   
+    <button onclick="add()">Submit</button>
+    <input id="myResult" placeholder="result">
+</body>
+</html>

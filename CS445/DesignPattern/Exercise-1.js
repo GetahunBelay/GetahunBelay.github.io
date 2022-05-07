@@ -3,13 +3,13 @@ const shoppingCart = (function(){
     let basket = [];
     let count;
     const upsertItem = function(item){
-       
-        if(basket.indexOf(item) == -1){
-            basket.push(item);
-            count++;
-        }else{
-            count++;
-        }
+        
+       let index = basket.findIndex(arrItem => arrItem.id = item.id)
+       if(index >= 0){
+           basket[index] = item
+       }else{
+           basket.push(item)
+       }
     }
 
     const getItemsCount = function(){
