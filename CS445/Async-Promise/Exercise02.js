@@ -13,19 +13,34 @@ console.log(`end`);
 // [4, 1, 5, 7, 2, 3, 6]
 */
 
-function removeDuplicatesAsync(arr) {
-    console.log("start")
-    let nonDupArr = []
-    setTimeout(() => {
-        for (let i = 0; i < arr.length; i++) {
-            if (nonDupArr.indexOf(arr[i]) === -1) {
-                nonDupArr.push(arr[i])
-            }
-        }
-        console.log(nonDupArr)
-    }, 2000)
-    console.log("end")
-}
+Array.prototype.removeDuplicatesAsync = function (arr) {
+    return this.filter(function (item, index, self) {
+        return self.indexOf(item) == index;
+    });
 
-removeDuplicatesAsync([4, 1, 5, 7, 2, 3, 1, 4, 6, 5, 2])
+}
+console.log("start");
+setTimeout(function () { console.log([4, 1, 5, 7, 2, 3, 1, 4, 6, 5, 2].removeDuplicatesAsync()); }, 2000);
+console.log("End");
+
+
+
+
+
+//  function removeDuplicatesAsync (arr) {
+//     console.log("start")
+//     let nonDupArr = []
+//     setTimeout(() => {
+//         for (let i = 0; i < arr.length; i++) {
+//             if (nonDupArr.indexOf(arr[i]) === -1) {
+//                 nonDupArr.push(arr[i])
+//             }
+//         }
+//         console.log(nonDupArr)
+//     }, 2000)
+//     console.log("end")
+// }
+
+//  removeDuplicatesAsync([4, 1, 5, 7, 2, 3, 1, 4, 6, 5, 2])
+
 
