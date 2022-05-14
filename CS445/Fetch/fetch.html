@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+         #reload {
+            align-items: center;
+        } 
+
+        H3 {
+            text-align: center;
+            margin-top: 125px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 0.2;
+        }
+
+        #users li{
+            display:inline-block;
+        }
+    </style>
+    <script src="fetch.js"></script>
+</head>
+
+<body>
+    <H3>Employees list</H3>
+    <div id="err"></div>
+    <ul id="users"></ul>
+    
+    <button class="btn btn-success" id="reload" type="button" onclick="refreshPage()">Refresh page</button>
+</body>
+
+</html>
