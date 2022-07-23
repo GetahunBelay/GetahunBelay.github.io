@@ -6,13 +6,13 @@ http.createServer((request, response) => {
 
     fs.readFile("./phone.jpg", function(err, data){
         if(err){
-            response.end("Whoops")
+            response.end("That is not right")
         }else{
             response.end(data)
         }
     })
 
     //fs.createReadStream("./phone.jpg").pipe(response)
-}).listen(3000, () => {
-    console.log("3000 is running")
+}).listen(8020, () => {
+    console.log("8020 is running")
 })
